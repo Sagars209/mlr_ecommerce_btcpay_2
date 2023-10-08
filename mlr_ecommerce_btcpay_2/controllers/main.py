@@ -57,7 +57,7 @@ class CustomController(Controller):
                         conversion_rate = float(resJson2[0]['rate'])
                         trn.write({
                             'crypto_payment': 'true',
-                            'crypto_payment_type': resJson2[0]['cryptoCode'],
+                            'crypto_payment_type': resJson2f[0]['cryptoCode'],
                             'crypto_conversion_rate': conversion_rate,
                             'crypto_payment_link': resJson[0]['checkoutLink'],
                             'crypto_invoiced_crypto_amount': crypto_invoiced_crypto_amount,
