@@ -1,22 +1,21 @@
+# -*- coding: utf-8 -*-
 {
-    "name": "MLR ecommerce BTCPay 2",
-    "summary": "MLR ecommerce BTCPay 2",
-    "author": "ERP",
-    "website": "https://www.milightningrod.com",
-    "category": "Ecommerce",
-    "version": "1.0",
-    "depends": ["website", "mlr_ecommerce_cryptopayments"],
-    "data": [
-        "views/btcpay_payment_template.xml",
-        "data/btcpay_payment_provider_data.xml",
-        "views/btcpay_payment_form.xml",
-        "data/btcpay_payment_icons.xml",
-        "views/btcpay_payment_provider.xml",
+    'name': 'MLR POS Bitcoin Payments - BTCpay',
+    'version': '1.0',
+    'category': 'Sales/Point of Sale',
+    'sequence': 7,
+    'summary': 'Integrate your POS with Bitcoin on-chain and lightning payments',
+    'description': '',
+    'data': [
+        'views/pos_payment_method.xml',
     ],
-    "installable": True,
-    "application": False,
-    "auto_install": False,
-    'post_init_hook': 'post_init_hook',
-    'uninstall_hook': 'uninstall_hook',
-    "license": "OPL-1",
+    'depends': ['point_of_sale','mlr_pos_cryptopayments'],
+    'installable': True,
+    'assets': {
+        'point_of_sale.assets': [
+            'mlr_pos_btcpay/static/**/*',
+            'mlr_pos_btcpay/static/**/**/*',
+        ],
+    },
+    'license': 'LGPL-3',
 }

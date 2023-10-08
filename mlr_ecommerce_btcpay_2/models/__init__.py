@@ -1,2 +1,4 @@
-from . import btcpay_payment_provider
-from . import btcpay_payment_transaction
+# coding: utf-8
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+from . import pos_payment_method
