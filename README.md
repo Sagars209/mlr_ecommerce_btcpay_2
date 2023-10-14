@@ -23,7 +23,7 @@ Setup
 2. Click on BTCpay to open the record.
 3. Enter a Name for the Instance. 
 4. Login into your BTCpay server and navigate to Account -> API Key. Create a key for use with Odoo.
-5. From BTCpay server copy the following information and paste in the Odoo Instance record: the server base URL, API key, and store ID.
+5. From BTCpay server copy the following information and paste in the Odoo Instance record: the server base URL, API key, and store ID. Enter a minimum and maximum fiat amount.
 6. Click Connect to BTCpay to verify the information is correct. If it is correct a green popup will affirm so, if it is incorrect a red popup will appear.
    ![image](https://github.com/ERP-FTW/mlr_ecommerce_btcpay_2/assets/124227412/cf84a790-de85-41ba-bedb-824ebbd00016)
 7. In Configuration -> Payment Form select the icon for lightning, in Configuration -> Payment Followup select the Payment Journal.
