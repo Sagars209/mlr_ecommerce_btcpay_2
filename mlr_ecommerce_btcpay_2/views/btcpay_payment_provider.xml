@@ -6,7 +6,7 @@
             <field name="inherit_id" ref="payment.payment_provider_form"/>
              <field name="arch" type="xml">
                 <group name="provider_credentials" position="after">
-                    <group attrs="{'invisible': [('code', '!=', 'btcpay')]}">
+                    <group>
                         <group>
                             <field name="btcpay_store_id"/>
                             <button string="Connect BTCPay server"
