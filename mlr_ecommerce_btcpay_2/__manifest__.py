@@ -11,7 +11,6 @@
         "data/btcpay_payment_method_data.xml",  
         "data/btcpay_payment_provider_data.xml",
         "views/btcpay_payment_form.xml",
-        #"data/btcpay_payment_icons.xml",     
         "views/btcpay_payment_provider.xml",
 
     ],
